@@ -1,0 +1,20 @@
+* {
+    -back-primary-color: #202428;
+    -back-sec-color: #25292E;
+    -accent-color: #F1866F;
+
+    -border-color: #474B4F;
+
+    -text-color: white;
+    -text-sec-color: #6B737D;
+
+    -success-color: #40CF5B;
+    -info-color: #85B6FD;
+    -warning-color: #ffb27c;
+    -error-color: #F1866F;
+
+    -bac-success-color: #145020;
+    -bac-info-color: #233e68;
+    -bac-warning-color: #683816;
+    -bac-error-color: #792816;
+}

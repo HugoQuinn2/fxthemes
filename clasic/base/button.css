@@ -1,0 +1,102 @@
+/* ----------------- button ----------------*/
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-border-width: 1px;
+
+    -fx-fill: -text-color;
+    -fx-text-fill: -text-color;
+
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}   
+
+.button:hover, .button:focused {
+    -fx-cursor: hand;
+    -fx-background-color: -border-color;
+}
+
+.button:pressed, .button:armed  {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* ------------- outlined button ------------ */
+.button.outlined {
+    -fx-border-color: -text-color;
+}
+
+.button.outlined.info {
+    -fx-border-color: -info-color;
+    -fx-fill: -info-color;
+    -fx-text-fill: -info-color;
+}
+
+.button.outlined.info:hover,  .button.outlined.info:focused{
+    -fx-background-color: -bac-info-color;
+}
+
+.button.outlined.success {
+    -fx-border-color: -success-color;
+    -fx-fill: -success-color;
+    -fx-text-fill: -success-color;
+}
+
+.button.outlined.success:hover,  .button.outlined.success:focused{
+    -fx-background-color: -bac-success-color;
+}
+
+.button.outlined.warning {
+    -fx-border-color: -warning-color;
+    -fx-fill: -warning-color;
+    -fx-text-fill: -warning-color;
+}
+
+.button.outlined.warning:hover,  .button.outlined.warning:focused{
+    -fx-background-color: -bac-warning-color;
+}
+
+.button.outlined.error {
+    -fx-border-color: -error-color;
+    -fx-fill: -error-color;
+    -fx-text-fill: -error-color;
+}
+
+.button.outlined.error:hover,  .button.outlined.error:focused{
+    -fx-background-color: -bac-error-color;
+}
+
+
+/* ---------- contained --------------------*/
+.button.contained {
+    -fx-background-color: -border-color;
+}
+
+.button.contained.info {
+    -fx-background-color: -bac-info-color;
+    -fx-fill: -info-color;
+    -fx-text-fill: -info-color;
+}
+
+.button.contained.info:hover,  .button.contained.info:focused{
+    -fx-border-color: -info-color;
+}
+
+.button.contained.success {
+    -fx-background-color: -bac-success-color;
+    -fx-fill: -success-color;
+    -fx-text-fill: -success-color;
+}
+
+.button.contained.warning {
+    -fx-background-color: -bac-warning-color;
+    -fx-fill: -warning-color;
+    -fx-text-fill: -warning-color;
+}
+
+.button.contained.error {
+    -fx-background-color: -bac-error-color;
+    -fx-fill: -error-color;
+    -fx-text-fill: -error-color;
+}

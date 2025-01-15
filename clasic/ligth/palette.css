@@ -1,0 +1,15 @@
+:root {
+    -back-primary-color:#FFFFFF;
+    -back-sec-color: #F6F8FA;
+    -accent-color: #F1866F;
+
+    -border-color: #D6D8DA;
+
+    -text-color: black;
+    -text-sec-color: #666D76;
+
+    -success-color: #2B7E39;
+    -info-color: #6D4FBF;
+    -warning-color: #CE8473;
+    -error-color: #9C600E;
+}
