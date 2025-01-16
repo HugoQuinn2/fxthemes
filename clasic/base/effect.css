@@ -1,0 +1,23 @@
+.no-padding {
+    -fx-padding: 0px;
+}
+
+.no-radius {
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.collapse {
+    -fx-opacity: 0; /* Ocultar visualmente */
+
+    -fx-max-height: 0px; /* Eliminar altura */
+    -fx-max-width: 0px;
+    -fx-min-height: 0px;
+    -fx-min-width: 0px;
+    -fx-pref-width: 0px;
+    -fx-pref-height: 0px;
+
+    -fx-padding: 0; /* Eliminar relleno */
+    -fx-cursor: default; /* Asegurarse de que no cambie el cursor */
+    -fx-pointer-events: none; /* Deshabilitar eventos del mouse */
+}

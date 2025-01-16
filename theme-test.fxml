@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1153.0" stylesheets="@clasic/dark/mod.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -36,13 +37,22 @@
                                        </styleClass>
                                     </ImageView>
                                     <Label styleClass="header" text="Label" />
-                                    <Label styleClass="context" text="Label" />
+                                    <Label styleClass="context" text="Label" VBox.vgrow="ALWAYS" />
                                     <HBox styleClass="actions">
                                        <children>
-                                          <Button mnemonicParsing="false" text="Button" />
-                                          <Button mnemonicParsing="false" text="Button" />
+                                          <Button mnemonicParsing="false">
+                                             <graphic>
+                                                <FontIcon iconLiteral="bi-heart" />
+                                             </graphic></Button>
+                                          <Button mnemonicParsing="false">
+                                             <graphic>
+                                                <FontIcon iconLiteral="bi-shuffle" />
+                                             </graphic></Button>
                                           <Region HBox.hgrow="ALWAYS" />
-                                          <Button mnemonicParsing="false" text="Button" />
+                                          <Button mnemonicParsing="false">
+                                             <graphic>
+                                                <FontIcon iconLiteral="bi-info-circle" />
+                                             </graphic></Button>
                                        </children>
                                     </HBox>
                                  </children>
@@ -58,11 +68,116 @@
                                     <Label styleClass="context" text="Label" />
                                     <HBox styleClass="actions">
                                        <children>
-                                          <Button mnemonicParsing="false" text="Button" />
-                                          <Button mnemonicParsing="false" text="Button" />
+                                          <Button mnemonicParsing="false" text="Fav." />
+                                          <Button mnemonicParsing="false" text="Send" />
                                           <Region HBox.hgrow="ALWAYS" />
-                                          <Button mnemonicParsing="false" text="Button" />
+                                          <Button mnemonicParsing="false" text="info." />
                                        </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="248.0" prefWidth="273.0" spacing="20.0">
+                                 <children>
+                                    <HBox prefHeight="83.0" prefWidth="273.0" styleClass="card">
+                                       <children>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="213.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label prefHeight="15.0" prefWidth="77.0" text="Label">
+                                                   <styleClass>
+                                                      <String fx:value="header" />
+                                                      <String fx:value="no-padding" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label text="Label" VBox.vgrow="ALWAYS">
+                                                   <styleClass>
+                                                      <String fx:value="context" />
+                                                      <String fx:value="no-padding" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="84.0" prefWidth="2.0" styleClass="actions">
+                                             <children>
+                                                <Button mnemonicParsing="false">
+                                                   <graphic>
+                                                      <FontIcon iconLiteral="bi-three-dots-vertical" />
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="83.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label styleClass="header" text="Label" />
+                                                <Label styleClass="context" text="Label" VBox.vgrow="ALWAYS" />
+                                             </children>
+                                          </VBox>
+                                          <VBox styleClass="actions">
+                                             <children>
+                                                <Button mnemonicParsing="false">
+                                                   <graphic>
+                                                      <FontIcon iconLiteral="bi-three-dots-vertical" />
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="card" />
+                                          <String fx:value="no-border" />
+                                       </styleClass>
+                                    </HBox>
+                                    <HBox prefHeight="83.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label styleClass="header" text="Label" />
+                                                <Label styleClass="context" text="Label" VBox.vgrow="ALWAYS" />
+                                             </children>
+                                          </VBox>
+                                          <VBox styleClass="actions">
+                                             <children>
+                                                <Button mnemonicParsing="false">
+                                                   <graphic>
+                                                      <FontIcon iconLiteral="bi-three-dots-vertical" />
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="card" />
+                                          <String fx:value="no-border" />
+                                          <String fx:value="action" />
+                                       </styleClass>
+                                    </HBox>
+                                    <HBox prefHeight="83.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label styleClass="header" text="Label" />
+                                                <Label styleClass="context" text="Label" VBox.vgrow="ALWAYS" />
+                                             </children>
+                                          </VBox>
+                                          <VBox styleClass="actions">
+                                             <children>
+                                                <Button mnemonicParsing="false">
+                                                   <graphic>
+                                                      <FontIcon iconLiteral="bi-three-dots-vertical" />
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="card" />
+                                          <String fx:value="no-border" />
+                                          <String fx:value="action" />
+                                          <String fx:value="collapse" />
+                                       </styleClass>
                                     </HBox>
                                  </children>
                               </VBox>
@@ -79,13 +194,16 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <FlowPane hgap="20.0" layoutX="102.0" layoutY="28.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <FlowPane hgap="20.0" layoutX="102.0" layoutY="28.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" rowValignment="TOP" vgap="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <HBox spacing="20.0">
                                  <children>
                                     <Button mnemonicParsing="false" text="Text" />
                                     <Button mnemonicParsing="false" styleClass="outlined" text="Outlined" />
-                                    <Button mnemonicParsing="false" text="Contained" />
+                                    <Button mnemonicParsing="false" styleClass="contained" text="Contained">
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic></Button>
                                  </children>
                               </HBox>
                               <HBox spacing="20.0">
@@ -102,6 +220,9 @@
                                           <String fx:value="contained" />
                                           <String fx:value="info" />
                                        </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
                                     </Button>
                                  </children>
                               </HBox>
@@ -119,6 +240,9 @@
                                           <String fx:value="contained" />
                                           <String fx:value="success" />
                                        </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
                                     </Button>
                                  </children>
                               </HBox>
@@ -136,6 +260,9 @@
                                           <String fx:value="contained" />
                                           <String fx:value="warning" />
                                        </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
                                     </Button>
                                  </children>
                               </HBox>
@@ -153,6 +280,69 @@
                                           <String fx:value="contained" />
                                           <String fx:value="error" />
                                        </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="20.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" styleClass="small" text="Text" />
+                                    <Button mnemonicParsing="false" text="Outlined">
+                                       <styleClass>
+                                          <String fx:value="outlined" />
+                                          <String fx:value="small" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" text="Contained">
+                                       <styleClass>
+                                          <String fx:value="contained" />
+                                          <String fx:value="small" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="20.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" styleClass="medium" text="Text" />
+                                    <Button mnemonicParsing="false" text="Outlined">
+                                       <styleClass>
+                                          <String fx:value="outlined" />
+                                          <String fx:value="medium" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" text="Contained">
+                                       <styleClass>
+                                          <String fx:value="contained" />
+                                          <String fx:value="medium" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="20.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" styleClass="large" text="Text" />
+                                    <Button mnemonicParsing="false" text="Outlined">
+                                       <styleClass>
+                                          <String fx:value="outlined" />
+                                          <String fx:value="large" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" text="Contained">
+                                       <styleClass>
+                                          <String fx:value="contained" />
+                                          <String fx:value="large" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontIcon iconLiteral="bi-heart" />
+                                       </graphic>
                                     </Button>
                                  </children>
                               </HBox>

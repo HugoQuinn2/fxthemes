@@ -7,9 +7,13 @@
 
     -fx-fill: -text-color;
     -fx-text-fill: -text-color;
+    -fx-font-size: 14px;
+    
 
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
+
+    -fx-padding: 5px 10px 5px 10px;
 }   
 
 .button:hover, .button:focused {
@@ -20,6 +24,42 @@
 .button:pressed, .button:armed  {
     -fx-scale-x: 0.95;
     -fx-scale-y: 0.95;
+}
+
+.button.info {
+    -fx-fill: -info-color;
+    -fx-text-fill: -info-color;
+}
+
+.button.info:hover,  .button.info:focused{
+    -fx-background-color: -bac-info-color;
+}
+
+.button.success {
+    -fx-fill: -success-color;
+    -fx-text-fill: -success-color;
+}
+
+.button.success:hover,  .button.success:focused{
+    -fx-background-color: -bac-success-color;
+}
+
+.button.warning {
+    -fx-fill: -warning-color;
+    -fx-text-fill: -warning-color;
+}
+
+.button.warning:hover,  .button.warning:focused{
+    -fx-background-color: -bac-warning-color;
+}
+
+.button.error {
+    -fx-fill: -error-color;
+    -fx-text-fill: -error-color;
+}
+
+.button.error:hover,  .button.error:focused{
+    -fx-background-color: -bac-error-color;
 }
 
 /* ------------- outlined button ------------ */
@@ -73,6 +113,10 @@
     -fx-background-color: -border-color;
 }
 
+.button.contained:hover,  .button.contained:focused{
+    -fx-border-color: -text-color;
+}
+
 .button.contained.info {
     -fx-background-color: -bac-info-color;
     -fx-fill: -info-color;
@@ -89,14 +133,66 @@
     -fx-text-fill: -success-color;
 }
 
+.button.contained.success:hover,  .button.contained.success:focused{
+    -fx-border-color: -success-color;
+}
+
 .button.contained.warning {
     -fx-background-color: -bac-warning-color;
     -fx-fill: -warning-color;
     -fx-text-fill: -warning-color;
 }
 
+.button.contained.warning:hover,  .button.contained.warning:focused{
+    -fx-border-color: -warning-color;
+}
+
 .button.contained.error {
     -fx-background-color: -bac-error-color;
     -fx-fill: -error-color;
     -fx-text-fill: -error-color;
+}
+
+.button.contained.error:hover,  .button.contained.error:focused{
+    -fx-border-color: -error-color;
+}
+
+/* ------------ Button sizes -------------------*/
+
+.button.small, .button.small FontIcon {
+    -fx-font-size: 12px;
+    -fx-icon-size: 12px;
+}
+
+.button.medium, .button.medium FontIcon {
+    -fx-font-size: 16px;
+    -fx-icon-size: 18px;
+}
+
+.button.large, .button.large FontIcon {
+    -fx-font-size: 18px;
+    -fx-icon-size: 20px;
+}
+
+/* ----------------- Ikonli ------------------- */
+
+.button FontIcon {
+    -fx-icon-size: 16px;
+    -fx-icon-color: -text-color;
+}
+
+.button.info FontIcon {
+    -fx-icon-color: -info-color;
+}
+
+.button.success FontIcon {
+    -fx-icon-color: -success-color;
+}
+
+.button.warning FontIcon {
+    -fx-icon-color: -warning-color;
+}
+
+.button.error FontIcon {
+    -fx-icon-color: -error-color;
 }
