@@ -75,6 +75,9 @@
     -fx-scale-x: 0;
     -fx-scale-y: 0;
     -fx-scale-z: 0; /* Completely hidden */
+
+    -fx-shape: "M 0,0 H1 L 4,3 7,0 H8 V1 L 5,4 8,7 V8 H7 L 4,5 1,8 H0 V7 L 3,4 0,1 Z";
+    -fx-scale-shape: false;
 }
 
 /* Selected Tab Effects */
@@ -111,7 +114,7 @@
 
 /* Arrow Style */
 .arrow {
-    -fx-background-color: -text-sec-color; /* Color of the arrow */
+    -fx-background-color: -accent-color; /* Color of the arrow */
     -fx-scale-x: 1.5; /* Horizontal scale of the arrow */
     -fx-scale-y: 1.5; /* Vertical scale of the arrow */
 }
@@ -119,15 +122,29 @@
 /* Arrow Hover and Selection */
 .tab-down-button:hover .arrow,
 .tab-down-button:selected .arrow {
-    -fx-background-color: -text-color; /* Change arrow color on hover or selection */
     -fx-cursor: hand; /* Hand cursor on hover */
 }
 
 /* Tab Menu Items */
-.tab-pane .tab-menu-item {
-    -fx-background-color: -back-color; /* Background color for the dropdown menu items */
-    -fx-border-color: -border-color; /* Border color for the dropdown menu items */
-    -fx-border-width: 1; /* Border width for the menu items */
-    -fx-padding: 5; /* Internal padding for menu items */
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.3, 0, 2); /* Shadow effect for the menu */
+.context-menu {
+    -fx-background-color: -back-primary-color; /* Changes the background color of the items */
+    -fx-text-fill: -text-color; /* Changes the text color of the items */
+    -fx-padding: 5px; /* Adjusts the padding of the items */
+
+    -fx-min-width: 150px;
+    -fx-pref-width: 150px;
+}
+
+.context-menu * {
+    -fx-text-fill: -text-color; /* Changes the text color of the items */
+}
+
+.context-menu .menu-item * {
+    -fx-padding: 0px 10px 0px 0px;
+}
+
+.context-menu .menu-item:hover, .context-menu .menu-item:focused {
+    -fx-background-color: -back-sec-color; /* Changes the background color of the items on hover or focus */
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
 }

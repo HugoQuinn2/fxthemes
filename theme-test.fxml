@@ -410,13 +410,13 @@
                               <FlowPane hgap="10.0" rowValignment="BASELINE" vgap="10.0">
                                  <children>
                                     <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                       <children>
+                                          <Label styleClass="header" text="Zoom" />
+                                       </children>
                                        <styleClass>
                                           <String fx:value="card" />
                                           <String fx:value="zoom" />
                                        </styleClass>
-                                       <children>
-                                          <Label styleClass="header" text="Zoom" />
-                                       </children>
                                     </VBox>
                                     <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                                        <styleClass>

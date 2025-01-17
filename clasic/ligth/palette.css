@@ -1,15 +1,21 @@
-:root {
-    -back-primary-color:#FFFFFF;
-    -back-sec-color: #F6F8FA;
-    -accent-color: #F1866F;
+* {
+    -back-primary-color: #FFFFFF; /* Primary background color */
+    -back-sec-color: #F0F4F8; /* Secondary background color */
+    -back-acc-sec-color: #4A4A4A; /* Accent secondary background color */
+    -accent-color: #FF6F61; /* Accent color */
 
-    -border-color: #D6D8DA;
+    -border-color: #D1D5DB; /* Border color */
 
-    -text-color: black;
-    -text-sec-color: #666D76;
+    -text-color: #333333; /* Primary text color */
+    -text-sec-color: #555555; /* Secondary text color */
 
-    -success-color: #2B7E39;
-    -info-color: #6D4FBF;
-    -warning-color: #CE8473;
-    -error-color: #9C600E;
+    -success-color: #28A745; /* Success color */
+    -info-color: #17A2B8; /* Info color */
+    -warning-color: #FFC107; /* Warning color */
+    -error-color: #DC3545; /* Error color */
+
+    -bac-success-color: #155724; /* Background success color */
+    -bac-info-color: #0C5460; /* Background info color */
+    -bac-warning-color: #856404; /* Background warning color */
+    -bac-error-color: #721C24; /* Background error color */
 }
