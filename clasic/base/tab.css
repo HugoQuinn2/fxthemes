@@ -1,0 +1,133 @@
+/* ============================================
+ * TabPane Customization
+ * ============================================ */
+
+/* General TabPane Header Area and Controls */
+.tab-pane .tab-header-area,
+.tab-pane .tab-header-area .tab-header-background,
+.tab-pane .tab-header-area .headers-region,
+.tab-pane .tab-header-area .headers-region .tab,
+.tab-pane .tab-header-area .control-buttons-tab {
+    -fx-background-color: -back-primary-color; /* Primary background color */
+    -fx-min-height: 35px; /* Fixed height for the tab header area */
+    -fx-max-height: 35px;
+    -fx-pref-height: 35px;
+    -fx-border-width: 0px; /* No border */
+    -fx-padding: 0px; /* No internal padding */
+}
+
+/* Focus Indicator for Tabs (hidden) */
+.tab-pane .tab-header-area .headers-region .tab .tab-container .focus-indicator {
+    -fx-opacity: 0; /* Make the focus indicator invisible */
+    -fx-min-height: 0px;
+    -fx-max-height: 0px;
+    -fx-min-width: 0px;
+    -fx-max-width: 0px;
+}
+
+/* Individual Tabs */
+.tab-pane .tab-header-area .headers-region .tab {
+    -fx-border-width: 1px 1px 0px 0px; /* Border: top, right, none for bottom, and none for left */
+    -fx-min-width: 130px; /* Fixed width for tabs */
+    -fx-max-width: 130px;
+    -fx-pref-width: 130px;
+    -fx-border-color: -border-color; /* Border color for tabs */
+}
+
+/* Tab Content Area */
+.tab-pane .tab-content-area {
+    -fx-background-color: -back-sec-color; /* Secondary background color */
+    -fx-border-width: 1px 0px 0px 0px; /* Top border only */
+    -fx-border-color: -border-color; /* Border color for content area */
+}
+
+/* Tab Header Background and Region */
+.tab-pane .tab-header-area .tab-header-background,
+.tab-pane .tab-header-area .tab-header-background .headers-region {
+    -fx-padding: 0px; /* No padding for the header background and region */
+}
+
+/* Tab Down Button */
+.tab-pane .tab-header-area .control-buttons-tab .container .tab-down-button {
+    -fx-background-color: transparent; /* Transparent background for the dropdown button */
+}
+
+/* Tab Container Padding */
+.tab-pane .tab-header-area .headers-region .tab .tab-container {
+    -fx-padding: 0px 5px 0px 0px; /* Padding: right only */
+}
+
+/* ============================================
+ * Tabs
+ * ============================================ */
+
+/* Tab Label and Close Button Styles */
+.tab-pane .tab-header-area .headers-region .tab .tab-container .tab-label {
+    -fx-text-fill: -text-sec-color; /* Secondary text color */
+    -fx-fill: -text-sec-color; /* Secondary fill color */
+    -fx-padding: 0px 10px 0px 10px; /* Padding for labels */
+    -fx-font-size: 14px; /* Font size for tab labels */
+}
+
+.tab-pane .tab-header-area .headers-region .tab .tab-container .tab-close-button {
+    -fx-background-color: -text-sec-color; /* Secondary color for close button */
+    -fx-opacity: 0; /* Initially invisible */
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+    -fx-scale-z: 0; /* Completely hidden */
+}
+
+/* Selected Tab Effects */
+.tab-pane .tab-header-area .headers-region .tab:selected .tab-container .tab-label {
+    -fx-text-fill: -text-color; /* Text color for selected tabs */
+    -fx-fill: -text-color; /* Fill color for selected tabs */
+}
+
+.tab-pane .tab-header-area .headers-region .tab:selected {
+    -fx-border-color: -accent-color -border-color -border-color -border-color; /* Accent color on top */
+    -fx-background-color: -back-sec-color; /* Secondary background for selected tabs */
+}
+
+.tab-pane .tab-header-area .headers-region .tab .tab-container .tab-close-button:hover {
+    -fx-cursor: hand; /* Hand cursor on hover for close button */
+}
+
+.tab-pane .tab-header-area .headers-region .tab:selected .tab-container .tab-close-button {
+    -fx-background-color: -text-color; /* Active text color for close button */
+    -fx-opacity: 1; /* Visible */
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-scale-z: 1; /* Fully displayed */
+}
+
+/* ============================================
+ * Tab Menu
+ * ============================================ */
+
+/* Dropdown Button Padding */
+.tab-down-button {
+    -fx-padding: 0px 20px 0px 10px; /* Padding for the dropdown button */
+}
+
+/* Arrow Style */
+.arrow {
+    -fx-background-color: -text-sec-color; /* Color of the arrow */
+    -fx-scale-x: 1.5; /* Horizontal scale of the arrow */
+    -fx-scale-y: 1.5; /* Vertical scale of the arrow */
+}
+
+/* Arrow Hover and Selection */
+.tab-down-button:hover .arrow,
+.tab-down-button:selected .arrow {
+    -fx-background-color: -text-color; /* Change arrow color on hover or selection */
+    -fx-cursor: hand; /* Hand cursor on hover */
+}
+
+/* Tab Menu Items */
+.tab-pane .tab-menu-item {
+    -fx-background-color: -back-color; /* Background color for the dropdown menu items */
+    -fx-border-color: -border-color; /* Border color for the dropdown menu items */
+    -fx-border-width: 1; /* Border width for the menu items */
+    -fx-padding: 5; /* Internal padding for menu items */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.3, 0, 2); /* Shadow effect for the menu */
+}
