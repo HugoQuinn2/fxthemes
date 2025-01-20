@@ -1,0 +1,143 @@
+/*
+*   Fields
+*/
+
+/* Effects to field */
+.text-field {
+    -fx-font-size: 14px;
+    -fx-border-width: 1;
+    -fx-background-color: -back-acc-sec-color;
+    -fx-text-fill: -text-color;
+    -fx-prompt-text-fill: -text-sec-color;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    
+    -fx-border-color: -border-color;
+}
+
+/* Effects to date picker */
+.date-picker {
+    -fx-border-width: 1;
+    -fx-background-color: -back-acc-sec-color;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    
+    -fx-border-color: -border-color;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-alignment: center;
+    -fx-pref-height: 20px;
+
+    -fx-cursor: hand;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: -border-color;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: -text-color;
+    -fx-shape: -icon-calendar;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+
+}
+
+.date-cell {
+    -fx-text-fill: -text-color;
+    -fx-background-color: -back-sec-color;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.date-cell:hover {
+    -fx-background-color: -back-acc-sec-color;
+}
+
+.date-picker-popup .month-year-pane,
+.date-picker-popup {
+    -fx-background-color: -back-primary-color;
+    -fx-border-width: 1px;
+    -fx-border-color: -border-color;
+    -fx-pref-width: 300px;
+    -fx-border-radius: 8px;
+    -fx-border-color: 8px;
+}
+
+.text-field.required,  .date-picker.required{
+    -fx-border-width: 1;
+    -fx-border-color: -error-color;
+}
+
+
+.form .pane.required {
+    -fx-border-width: 1px;
+    -fx-border-color: -error-color;
+}
+
+.form .footer {
+    -fx-text-fill: -text-sec-color;
+    -fx-fill: -text-sec-color;
+
+    -fx-font-size: 12px;
+}
+
+.form .button.cancel {
+    -fx-text-fill: -text-color;
+    -fx-fill: -text-color;
+
+    -fx-background-color: -bac-error-color;
+
+    -fx-font-size: 14px;
+}
+
+.form .button.submit {
+    -fx-text-fill: -text-color;
+    -fx-fill: -text-color;
+
+    -fx-background-color: -bac-success-color;
+
+    -fx-font-size: 14px;
+}
+
+.form .header {
+    -fx-text-fill: -text-color;
+    -fx-fill: -text-color;
+
+    -fx-font-size: 18px;
+}
+
+.form .actions-container {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/*
+*   Field Container Styles
+*/
+
+.form .field-container {
+    -fx-alignment: center-left;
+    -fx-padding: 0 10 3 10;
+}
+
+/* Labels Styles */
+.form .field-container .text-required {
+    -fx-text-fill: -error-color !important;
+}
+
+.form .field-container .context {
+    -fx-text-fill: -text-sec-color !important;
+    -fx-padding: 0 0 0 10;
+}

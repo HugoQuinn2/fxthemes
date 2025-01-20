@@ -76,7 +76,7 @@
     -fx-scale-y: 0;
     -fx-scale-z: 0; /* Completely hidden */
 
-    -fx-shape: "M 0,0 H1 L 4,3 7,0 H8 V1 L 5,4 8,7 V8 H7 L 4,5 1,8 H0 V7 L 3,4 0,1 Z";
+    -fx-shape: -icon-close;
     -fx-scale-shape: false;
 }
 
@@ -113,10 +113,11 @@
 }
 
 /* Arrow Style */
-.arrow {
+.tab-down-button .arrow {
     -fx-background-color: -accent-color; /* Color of the arrow */
     -fx-scale-x: 1.5; /* Horizontal scale of the arrow */
     -fx-scale-y: 1.5; /* Vertical scale of the arrow */
+    -fx-shape: -icon-arrow-down;
 }
 
 /* Arrow Hover and Selection */

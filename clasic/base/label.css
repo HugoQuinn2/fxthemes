@@ -1,0 +1,6 @@
+.label, .text {
+    -fx-font-family: 'Fira Code', monospace;
+    -fx-text-fill: -text-color;
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+}

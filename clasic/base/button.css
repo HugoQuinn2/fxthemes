@@ -1,5 +1,6 @@
 /* ----------------- button ----------------*/
 .button {
+    -fx-font-family: 'Roboto', sans-serif;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
