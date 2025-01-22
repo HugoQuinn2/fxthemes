@@ -1,8 +1,8 @@
 /*
-*   Fields
-*/
+ * Fields
+ */
 
-/* Effects to field */
+/* Styles for text fields */
 .text-field {
     -fx-font-size: 14px;
     -fx-border-width: 1;
@@ -16,7 +16,11 @@
     -fx-border-color: -border-color;
 }
 
-/* Effects to date picker */
+/*
+ * Date Picker Styles
+ */
+
+/* Base styles for date picker */
 .date-picker {
     -fx-border-width: 1;
     -fx-background-color: -back-acc-sec-color;
@@ -27,11 +31,13 @@
     -fx-border-color: -border-color;
 }
 
+/* Styling for the text field inside the date picker */
 .date-picker .text-field {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
 
+/* Styling for the arrow button in the date picker */
 .date-picker .arrow-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
@@ -41,51 +47,112 @@
     -fx-cursor: hand;
 }
 
+/* Hover effect for the arrow button */
 .date-picker .arrow-button:hover {
     -fx-background-color: -border-color;
 }
 
+/* Styling for the arrow inside the arrow button */
 .date-picker .arrow-button .arrow {
     -fx-background-color: -text-color;
     -fx-shape: -icon-calendar;
     -fx-pref-width: 20px;
     -fx-pref-height: 20px;
-
 }
 
-.date-cell {
-    -fx-text-fill: -text-color;
-    -fx-background-color: -back-sec-color;
+/* Styling for individual date cells */
 
-    -fx-background-radius: 8px;
-    -fx-border-radius: 8px;
-}
-
-.date-cell:hover {
-    -fx-background-color: -back-acc-sec-color;
-}
-
-.date-picker-popup .month-year-pane,
+/* Styling for the date picker popup */
 .date-picker-popup {
     -fx-background-color: -back-primary-color;
     -fx-border-width: 1px;
     -fx-border-color: -border-color;
-    -fx-pref-width: 300px;
+    -fx-pref-width: 350px;
+    -fx-background-radius: 8px;
     -fx-border-radius: 8px;
     -fx-border-color: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.3, 0, 5);
 }
 
-.text-field.required,  .date-picker.required{
+.date-picker-popup .month-year-pane {
+    -fx-background-color: transparent;
+}
+
+.date-picker-popup .calendar-grid {
+    -fx-background-color: transparent;
+}
+
+.date-picker-popup .date-cell {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-color;
+
+    -fx-padding: 5px;
+
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: -accent-color;
+}
+
+.date-picker-popup .previous-month, .date-picker-popup .next-month {
+    -fx-text-fill: -text-sec-color;
+}
+
+.date-picker-popup .today {
+    -fx-border-color: -info-color;
+}
+
+.date-picker-popup .selected {
+    -fx-background-color: -bac-info-color;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: -back-acc-sec-color;
+}
+
+.date-picker-popup .right-arrow, 
+.date-picker-popup .left-arrow {
+    -fx-background-color: -accent-color;
+}
+
+.date-picker-popup .left-arrow {
+    -fx-shape: -icon-arrow-prev;
+}
+
+.date-picker-popup .right-arrow {
+    -fx-shape: -icon-arrow-next;
+}
+
+.date-picker-popup .spinner-label {
+    -fx-spacing: 30px;
+    -fx-alignment: center;
+}
+
+/*
+ * Validation Styles
+ */
+
+/* Styling for required fields */
+.text-field.required,
+.date-picker.required {
     -fx-border-width: 1;
     -fx-border-color: -error-color;
 }
 
-
+/* Styling for required panes */
 .form .pane.required {
     -fx-border-width: 1px;
     -fx-border-color: -error-color;
 }
 
+/*
+ * Form Footer Styles
+ */
+
+/* Footer text styles */
 .form .footer {
     -fx-text-fill: -text-sec-color;
     -fx-fill: -text-sec-color;
@@ -93,6 +160,11 @@
     -fx-font-size: 12px;
 }
 
+/*
+ * Form Button Styles
+ */
+
+/* Cancel button styles */
 .form .button.cancel {
     -fx-text-fill: -text-color;
     -fx-fill: -text-color;
@@ -102,6 +174,7 @@
     -fx-font-size: 14px;
 }
 
+/* Submit button styles */
 .form .button.submit {
     -fx-text-fill: -text-color;
     -fx-fill: -text-color;
@@ -111,6 +184,11 @@
     -fx-font-size: 14px;
 }
 
+/*
+ * Form Header Styles
+ */
+
+/* Header text styles */
 .form .header {
     -fx-text-fill: -text-color;
     -fx-fill: -text-color;
@@ -118,25 +196,34 @@
     -fx-font-size: 18px;
 }
 
+/*
+ * Form Actions Container
+ */
+
+/* Styling for the actions container */
 .form .actions-container {
     -fx-spacing: 10px;
     -fx-padding: 10px;
 }
 
 /*
-*   Field Container Styles
-*/
+ * Field Container Styles
+ */
 
+/* Styling for field containers */
 .form .field-container {
     -fx-alignment: center-left;
     -fx-padding: 0 10 3 10;
 }
 
 /* Labels Styles */
+
+/* Styling for required field labels */
 .form .field-container .text-required {
     -fx-text-fill: -error-color !important;
 }
 
+/* Styling for contextual text inside field containers */
 .form .field-container .context {
     -fx-text-fill: -text-sec-color !important;
     -fx-padding: 0 0 0 10;

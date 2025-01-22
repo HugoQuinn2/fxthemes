@@ -492,7 +492,7 @@
                                           <Label styleClass="text-required" />
                                        </children>
                                     </TextFlow>
-                                    <DatePicker maxWidth="1.7976931348623157E308" styleClass="required" />
+                                    <DatePicker maxWidth="1.7976931348623157E308" showWeekNumbers="true" styleClass="required" />
                                     <Label styleClass="context" text="Label" />
                                  </children>
                               </VBox>

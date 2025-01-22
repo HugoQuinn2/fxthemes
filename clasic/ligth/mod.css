@@ -1,6 +1,9 @@
 @import url("palette.css");
+@import url("../base/icon.css");
 
+@import url("../base/label.css");
 @import url("../base/pane.css");
 @import url("../base/button.css");
 @import url("../base/effect.css");
 @import url("../base/tab.css");
+@import url("../base/field.css");
