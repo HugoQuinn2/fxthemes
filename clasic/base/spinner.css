@@ -1,0 +1,37 @@
+/* ============================================
+ * Spinner Customization
+ * ============================================ */
+ .spinner {
+    -fx-border-width: 1;
+    -fx-background-color: -back-acc-sec-color;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    
+    -fx-border-color: -border-color;
+ }
+
+ .spinner .text-field {
+    -fx-background-color: transparent !important;
+    -fx-border-color: transparent !important;
+ }
+
+ .spinner .increment-arrow-button,
+ .spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+ }
+
+ .spinner .increment-arrow-button .increment-arrow {
+    -fx-shape: -icon-arrow-up;
+    -fx-background-color: -accent-color;
+ }
+
+ .spinner .decrement-arrow-button .decrement-arrow {
+    -fx-shape: -icon-arrow-down;
+    -fx-background-color: -accent-color;
+ }
+
+ .spinner.required {
+    -fx-border-color: -error-color;
+ }

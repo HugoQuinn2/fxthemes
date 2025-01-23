@@ -1,0 +1,86 @@
+/* ============================================
+ * Form Customization
+ * ============================================ */
+
+/* Cancel button styles */
+.form .button.cancel {
+    -fx-text-fill: -text-color;
+    -fx-fill: -text-color;
+
+    -fx-background-color: -bac-error-color;
+
+    -fx-font-size: 14px;
+}
+
+/* Submit button styles */
+.form .button.submit {
+    -fx-text-fill: -text-color;
+    -fx-fill: -text-color;
+
+    -fx-background-color: -bac-success-color;
+
+    -fx-font-size: 14px;
+}
+
+/*
+ * Form Header Styles
+ */
+
+/* Header text styles */
+.form .header {
+    -fx-text-fill: -text-color;
+    -fx-fill: -text-color;
+
+    -fx-font-size: 18px;
+}
+
+/*
+ * Form Actions Container
+ */
+
+/* Styling for the actions container */
+.form .actions-container {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/*
+ * Field Container Styles
+ */
+
+/* Styling for field containers */
+.form .field-container {
+    -fx-alignment: center-left;
+    -fx-padding: 0 10 3 10;
+}
+
+/* Labels Styles */
+
+/* Styling for required field labels */
+.form .field-container .text-required {
+    -fx-text-fill: -error-color !important;
+}
+
+/* Styling for contextual text inside field containers */
+.form .field-container .context {
+    -fx-text-fill: -text-sec-color !important;
+    -fx-padding: 0 0 0 10;
+}
+
+/* Styling for required panes */
+.form .pane.required {
+    -fx-border-width: 1px;
+    -fx-border-color: -error-color;
+}
+
+/*
+ * Form Footer Styles
+ */
+
+/* Footer text styles */
+.form .footer {
+    -fx-text-fill: -text-sec-color;
+    -fx-fill: -text-sec-color;
+
+    -fx-font-size: 12px;
+}

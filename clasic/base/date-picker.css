@@ -1,0 +1,114 @@
+/* ============================================
+ * Date Picker Customization
+ * ============================================ */
+
+/* Base styles for date picker */
+.date-picker {
+    -fx-border-width: 1;
+    -fx-background-color: -back-acc-sec-color;
+
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    
+    -fx-border-color: -border-color;
+}
+
+/* Styling for the text field inside the date picker */
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Styling for the arrow button in the date picker */
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-alignment: center;
+    -fx-pref-height: 20px;
+
+    -fx-cursor: hand;
+}
+
+/* Hover effect for the arrow button */
+.date-picker .arrow-button:hover {
+    -fx-background-color: -border-color;
+}
+
+/* Styling for the arrow inside the arrow button */
+.date-picker .arrow-button .arrow {
+    -fx-background-color: -text-color;
+    -fx-shape: -icon-calendar;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+}
+
+/* Styling for individual date cells */
+
+/* Styling for the date picker popup */
+.date-picker-popup {
+    -fx-background-color: -back-primary-color;
+    -fx-border-width: 1px;
+    -fx-border-color: -border-color;
+    -fx-pref-width: 350px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.3, 0, 5);
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: transparent;
+}
+
+.date-picker-popup .calendar-grid {
+    -fx-background-color: transparent;
+}
+
+.date-picker-popup .date-cell {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-color;
+
+    -fx-padding: 5px;
+
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: -accent-color;
+}
+
+.date-picker-popup .previous-month, .date-picker-popup .next-month {
+    -fx-text-fill: -text-sec-color;
+}
+
+.date-picker-popup .today {
+    -fx-border-color: -info-color;
+}
+
+.date-picker-popup .selected {
+    -fx-background-color: -bac-info-color;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: -back-acc-sec-color;
+}
+
+.date-picker-popup .right-arrow, 
+.date-picker-popup .left-arrow {
+    -fx-background-color: -accent-color;
+}
+
+.date-picker-popup .left-arrow {
+    -fx-shape: -icon-arrow-prev;
+}
+
+.date-picker-popup .right-arrow {
+    -fx-shape: -icon-arrow-next;
+}
+
+.date-picker-popup .spinner-label {
+    -fx-spacing: 30px;
+    -fx-alignment: center;
+}

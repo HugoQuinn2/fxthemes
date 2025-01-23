@@ -1,9 +1,11 @@
-/*
- * Fields
- */
+/* ============================================
+ * Text Field Customization
+ * ============================================ */
 
 /* Styles for text fields */
-.text-field {
+.text-field,
+.combo-box,
+.choice-box {
     -fx-font-size: 14px;
     -fx-border-width: 1;
     -fx-background-color: -back-acc-sec-color;
@@ -16,215 +18,92 @@
     -fx-border-color: -border-color;
 }
 
-/*
- * Date Picker Styles
- */
-
-/* Base styles for date picker */
-.date-picker {
-    -fx-border-width: 1;
-    -fx-background-color: -back-acc-sec-color;
-
-    -fx-background-radius: 8px;
-    -fx-border-radius: 8px;
-    
-    -fx-border-color: -border-color;
-}
-
-/* Styling for the text field inside the date picker */
-.date-picker .text-field {
-    -fx-background-color: transparent;
-    -fx-border-color: transparent;
-}
-
-/* Styling for the arrow button in the date picker */
-.date-picker .arrow-button {
-    -fx-background-color: transparent;
-    -fx-border-color: transparent;
-    -fx-alignment: center;
-    -fx-pref-height: 20px;
-
-    -fx-cursor: hand;
-}
-
-/* Hover effect for the arrow button */
-.date-picker .arrow-button:hover {
-    -fx-background-color: -border-color;
-}
-
-/* Styling for the arrow inside the arrow button */
-.date-picker .arrow-button .arrow {
-    -fx-background-color: -text-color;
-    -fx-shape: -icon-calendar;
-    -fx-pref-width: 20px;
-    -fx-pref-height: 20px;
-}
-
-/* Styling for individual date cells */
-
-/* Styling for the date picker popup */
-.date-picker-popup {
-    -fx-background-color: -back-primary-color;
-    -fx-border-width: 1px;
-    -fx-border-color: -border-color;
-    -fx-pref-width: 350px;
-    -fx-background-radius: 8px;
-    -fx-border-radius: 8px;
-    -fx-border-color: 8px;
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.3, 0, 5);
-}
-
-.date-picker-popup .month-year-pane {
-    -fx-background-color: transparent;
-}
-
-.date-picker-popup .calendar-grid {
-    -fx-background-color: transparent;
-}
-
-.date-picker-popup .date-cell {
-    -fx-border-color: transparent;
-    -fx-background-color: transparent;
-    -fx-text-fill: -text-color;
-
-    -fx-padding: 5px;
-
-    -fx-border-radius: 8px;
-    -fx-background-radius: 8px;
-}
-
-.date-picker-popup .week-number-cell {
-    -fx-text-fill: -accent-color;
-}
-
-.date-picker-popup .previous-month, .date-picker-popup .next-month {
-    -fx-text-fill: -text-sec-color;
-}
-
-.date-picker-popup .today {
-    -fx-border-color: -info-color;
-}
-
-.date-picker-popup .selected {
-    -fx-background-color: -bac-info-color;
-}
-
-.date-picker-popup .day-cell:hover {
-    -fx-background-color: -back-acc-sec-color;
-}
-
-.date-picker-popup .right-arrow, 
-.date-picker-popup .left-arrow {
+.combo-box .arrow-button .arrow,
+.choice-box .open-button .arrow {
+    -fx-shape: -icon-arrow-down;
     -fx-background-color: -accent-color;
 }
 
-.date-picker-popup .left-arrow {
-    -fx-shape: -icon-arrow-prev;
+.combo-box-popup .list-view,
+.choice-box .list-view{
+    -fx-font-size: 14px;
+    -fx-text-fill: -text-color;
+
+    -fx-background-color: -back-primary-color;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0.3, 0, 5);
+
+    -fx-padding: 5px;
 }
 
-.date-picker-popup .right-arrow {
-    -fx-shape: -icon-arrow-next;
+.combo-box-popup .list-view .list-cell:hover,
+.choice-box .list-view .list-cell:hover{
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+
+    -fx-background-color: -back-acc-sec-color;
 }
 
-.date-picker-popup .spinner-label {
-    -fx-spacing: 30px;
-    -fx-alignment: center;
-}
-
-/*
- * Validation Styles
- */
+/* ============================================
+ * Validation Style
+ * ============================================ */
 
 /* Styling for required fields */
 .text-field.required,
-.date-picker.required {
-    -fx-border-width: 1;
+.date-picker.required,
+.choice-box.required,
+.combo-box.required {
     -fx-border-color: -error-color;
 }
 
-/* Styling for required panes */
-.form .pane.required {
-    -fx-border-width: 1px;
-    -fx-border-color: -error-color;
-}
+/* ============================================
+ * Chech Box Customization
+ * ============================================ */
 
-/*
- * Form Footer Styles
- */
-
-/* Footer text styles */
-.form .footer {
-    -fx-text-fill: -text-sec-color;
-    -fx-fill: -text-sec-color;
-
-    -fx-font-size: 12px;
-}
-
-/*
- * Form Button Styles
- */
-
-/* Cancel button styles */
-.form .button.cancel {
+ /* Basic style to ckeck box */
+ .check-box {
     -fx-text-fill: -text-color;
-    -fx-fill: -text-color;
+ }
 
-    -fx-background-color: -bac-error-color;
+ /* Remove Box for custom icons */
+ .check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
 
-    -fx-font-size: 14px;
-}
+    -fx-border-width: 0;
 
-/* Submit button styles */
-.form .button.submit {
-    -fx-text-fill: -text-color;
-    -fx-fill: -text-color;
+    -fx-max-height: 20;
+    -fx-min-height: 20;
+    -fx-pref-height: 20;
 
-    -fx-background-color: -bac-success-color;
+    -fx-max-width: 20;
+    -fx-min-width: 20;
+    -fx-pref-width: 20;
+ }
 
-    -fx-font-size: 14px;
-}
+ /* Define -icon-square like new default mark */
+ .check-box .box .mark {
+    -fx-shape: -icon-square;
+    -fx-background-color: -text-color;
 
-/*
- * Form Header Styles
- */
+    -fx-border-width: 0;
 
-/* Header text styles */
-.form .header {
-    -fx-text-fill: -text-color;
-    -fx-fill: -text-color;
+    -fx-max-height: 20;
+    -fx-min-height: 20;
+    -fx-pref-height: 20;
 
-    -fx-font-size: 18px;
-}
+    -fx-max-width: 20;
+    -fx-min-width: 20;
+    -fx-pref-width: 20;
+ }
 
-/*
- * Form Actions Container
- */
+ .check-box:selected .box .mark {
+    -fx-border-width: 0;
+    -fx-shape: -icon-check-square;
+ }
 
-/* Styling for the actions container */
-.form .actions-container {
-    -fx-spacing: 10px;
-    -fx-padding: 10px;
-}
-
-/*
- * Field Container Styles
- */
-
-/* Styling for field containers */
-.form .field-container {
-    -fx-alignment: center-left;
-    -fx-padding: 0 10 3 10;
-}
-
-/* Labels Styles */
-
-/* Styling for required field labels */
-.form .field-container .text-required {
-    -fx-text-fill: -error-color !important;
-}
-
-/* Styling for contextual text inside field containers */
-.form .field-container .context {
-    -fx-text-fill: -text-sec-color !important;
-    -fx-padding: 0 0 0 10;
-}
+ .check-box:indeterminate .box .mark {
+    -fx-border-width: 0;
+    -fx-shape: -icon-minus-square;
+ }
