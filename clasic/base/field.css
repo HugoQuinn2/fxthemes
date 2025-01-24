@@ -64,6 +64,7 @@
  /* Basic style to ckeck box */
  .check-box {
     -fx-text-fill: -text-color;
+    -fx-effect: none !important;
  }
 
  /* Remove Box for custom icons */
@@ -100,10 +101,26 @@
 
  .check-box:selected .box .mark {
     -fx-border-width: 0;
+    -fx-padding: 0;
     -fx-shape: -icon-check-square;
+ }
+
+ .check-box:selected .box {
+    -fx-border-width: 0;
+    -fx-padding: 0;
+ }
+
+ .check-box:selected .box {
+    -fx-background-radius: 5px;
+    -fx-background-color: -info-color;
  }
 
  .check-box:indeterminate .box .mark {
     -fx-border-width: 0;
     -fx-shape: -icon-minus-square;
+ }
+
+ .check-box:indeterminate .box {
+    -fx-background-radius: 5px;
+    -fx-background-color: -warning-color;
  }

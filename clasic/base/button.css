@@ -197,3 +197,24 @@
 .button.error FontIcon {
     -fx-icon-color: -error-color;
 }
+
+.button.link {
+    -fx-text-fill: -info-color;
+}
+
+.button.link:hover, .button.link:focused {
+    -fx-background-color: transparent;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-underline: true;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-color;
+}
+
+.menu-button .arrow-button .arrow {
+    -fx-shape: -icon-arrow-down;
+    -fx-background-color: -accent-color;
+}
